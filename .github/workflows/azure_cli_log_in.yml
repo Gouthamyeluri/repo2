@@ -26,4 +26,10 @@ jobs:
         app-name: new-test-demo
         images: newtestdemo.azurecr.io/myapp1:latest
         resource-group: new-test-demo_group
+        
+    - name: Deploy into azure funtions
+      uses: Azure/functions-action@v1
+      with:
+        app-name: testing0101
+        package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/myapp'
 
