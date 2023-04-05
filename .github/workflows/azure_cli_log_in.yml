@@ -1,4 +1,4 @@
-name: Build Linux Container Image and Push to Azure Function
+name: Build Container Image and Push to Azure Function
 
 on:
   workflow_dispatch:
