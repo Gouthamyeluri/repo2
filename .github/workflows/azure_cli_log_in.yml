@@ -31,5 +31,5 @@ jobs:
       uses: Azure/functions-action@v1
       with:
         app-name: testing0101
-        package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/myapp'
+        package: 'newtestdemo.azurecr.io/myapp1:latest'
 
